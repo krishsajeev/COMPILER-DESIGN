@@ -7,7 +7,7 @@ import java.util.regex.*;
 public class analyser {    
     public static HashMap<String,String> analyse(String line){
         //code to create symboltable
-        ArrayList<String> keywords = new ArrayList<String>(Arrays.asList("and","as","assert","break", "class", "continue", "def", "del", "del", "elif", "else", "except", "False", "finally", "for", "from", "global", "if", "import", "in", "lambda", "None", "nonlocal", "not", "or", "pass", "raise", "return", "True", "try", "while", "with", "yield"));
+        ArrayList<String> keywords = new ArrayList<String>(Arrays.asList("and","as","assert","break", "class", "continue", "def", "del", "del", "elif", "print", "else", "except", "False", "finally", "for", "from", "global", "if", "import", "in", "lambda", "None", "nonlocal", "not", "or", "pass", "raise", "return", "True", "try", "while", "with", "yield"));
         ArrayList<String> operators = new ArrayList<String>(Arrays.asList("+","-","*","/","%","**","//",">","<",">=","<=", "and", "or", "not", "is", "is not", "in", "not in","&","|","^","~","<<",">>"));
         ArrayList<String> delimiters = new ArrayList<String>(Arrays.asList("+=","-=","*=","/=","%=","//=","**=","&=","|=","^=",">>=","<<=","==","!=", "^=", ":", "`",";","[","]","(",")","{","}","=",",")); 
         HashMap<String,String> symboltable=new HashMap<String,String>();
